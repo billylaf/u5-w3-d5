@@ -1,6 +1,6 @@
 package bilallafdili.u5_w3_d5.payloads;
 
-import enums.RuoloUtente;
+import bilallafdili.u5_w3_d5.enums.RuoloUtente;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;

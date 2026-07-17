@@ -1,6 +1,6 @@
 package bilallafdili.u5_w3_d5.entities;
 
-import enums.StatoEvento;
+import bilallafdili.u5_w3_d5.enums.StatoEvento;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

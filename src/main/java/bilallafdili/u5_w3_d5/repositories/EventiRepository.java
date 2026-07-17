@@ -2,7 +2,7 @@ package bilallafdili.u5_w3_d5.repositories;
 
 import bilallafdili.u5_w3_d5.entities.Evento;
 import bilallafdili.u5_w3_d5.entities.Utente;
-import enums.StatoEvento;
+import bilallafdili.u5_w3_d5.enums.StatoEvento;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;

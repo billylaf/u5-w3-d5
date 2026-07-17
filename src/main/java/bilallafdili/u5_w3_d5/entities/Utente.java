@@ -1,8 +1,8 @@
 package bilallafdili.u5_w3_d5.entities;
 
 
+import bilallafdili.u5_w3_d5.enums.RuoloUtente;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import enums.RuoloUtente;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
