@@ -4,6 +4,8 @@ import bilallafdili.u5_w3_d5.entities.Evento;
 import bilallafdili.u5_w3_d5.entities.Utente;
 import enums.StatoEvento;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -13,7 +15,8 @@ import java.util.UUID;
 public interface EventiRepository extends JpaRepository<Evento, UUID> {
     List<Evento> findByCreatore(Utente creatore);
 
-    List<Evento> findByPostiDisponibiliGreaterThan0AndStato(StatoEvento stato);
+    @Query("SELECT e FROM Evento e WHERE e.postiDisponibili > 0 AND e.stato = :stato")
+    List<Evento> findEventiDisponibili(@Param("stato") StatoEvento stato);
 
     List<Evento> findByCreatoreAndStatoNot(Utente creatore, StatoEvento stato);
 }
